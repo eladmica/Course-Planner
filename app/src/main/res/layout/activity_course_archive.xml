@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="@color/white"
+        tools:context="com.example.owner.courseplanner.CourseArchive">
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/course_archive_title"
+              android:paddingTop="-5dp"
+              android:text="Course Archive"
+              android:textSize="26sp"
+              android:layout_marginBottom="2dp"
+              android:letterSpacing="-0.03"
+              android:textColor="@color/grey_light_custom"
+    />
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line_divider"
+            android:layout_below="@+id/course_archive_title"
+    />
+
+    <ExpandableListView
+            android:layout_below="@id/course_archive_title"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/course_archive_expandable_list"
+            android:groupIndicator="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:divider="@color/white"
+    />
+
+</RelativeLayout>

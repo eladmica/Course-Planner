@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">CPSC Course Planner</string>
+
+    <string name="title_activity_course_archive">CPSC Course Planner</string>
+    <string name="title_activity_app_launcher">CPSC Course Planner</string>
+    <string name="title_activity_choose_courses">CPSC Course Planner</string>
+    <string name="title_activity_select_completed_courses">CPSC Course Planner</string>
+
+    <string name="menu_change_completed">Update Completed Courses</string>
+    <string name="menu_change_courses">Change My Courses</string>
+    <string name="menu_course_archive">Course Archive</string>
+    <string name="menu_my_courses">My Courses</string>
+
+</resources>

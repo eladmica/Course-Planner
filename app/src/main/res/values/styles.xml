@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="logo">@mipmap/ic_launcher</item>
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="android:background">@color/blue_custom</item>
+        <item name="background">@color/blue_custom</item>
+    </style>
+
+    <!-- Transparent Activity -->
+    <style name="activityTransparent" parent="Theme.AppCompat">
+        <item name="android:background">@null</item>
+    </style>
+
+
+
+</resources>

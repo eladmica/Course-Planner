@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.owner.courseplanner.MyCourses"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:id="@+id/my_courses_main_view"
+>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="-5dp"
+              android:text="My Courses"
+              android:textSize="26sp"
+              android:layout_marginBottom="2dp"
+              android:letterSpacing="-0.03"
+              android:textColor="@color/grey_light_custom"
+    />
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_line_divider"
+    />
+
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Total of "
+                  android:textSize="16sp"
+                  android:textColor="@color/grey_custom"
+                  android:id="@+id/my_courses_i_have"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="34 credits"
+                  android:textSize="16sp"
+                  android:textColor="@color/blue_custom"
+                  android:textStyle="bold"
+                  android:id="@+id/my_courses_num_credits"
+                  android:layout_toRightOf="@+id/my_courses_i_have"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text=" from CPSC Courses"
+                  android:textSize="16sp"
+                  android:textColor="@color/grey_custom"
+                  android:id="@+id/my_courses_from_CPSC"
+                  android:layout_toRightOf="@+id/my_courses_num_credits"
+        />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/my_courses_three_hundred_level_credits"
+                  android:textColor="@color/blue_custom"
+                  android:textSize="14sp"
+                  android:textStyle="bold"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/my_courses_three_hundred_level_courses"
+                  android:textColor="@color/grey_custom"
+                  android:textSize="14sp"
+                  android:layout_toRightOf="@+id/my_courses_three_hundred_level_credits"
+                  android:text=" from 300 level courses"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/my_courses_four_hundred_level_credits"
+                  android:textColor="@color/blue_custom"
+                  android:textSize="14sp"
+                  android:textStyle="bold"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/my_courses_four_hundred_level_courses"
+                  android:textColor="@color/grey_custom"
+                  android:textSize="14sp"
+                  android:layout_toRightOf="@+id/my_courses_four_hundred_level_credits"
+                  android:text=" from 400 level courses"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+    >
+        <ImageView android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/my_courses_error_icon"
+                   android:src="@drawable/error_icon"
+                   android:visibility="invisible"
+
+        />
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/my_courses_missing_core_courses"
+                  android:textColor="@color/red_custom"
+                  android:textSize="14sp"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="10dp"
+                  android:gravity="bottom"
+                  android:layout_toRightOf="@+id/my_courses_error_icon"
+                  android:visibility="invisible"
+        />
+
+
+        <ImageView android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/my_courses_check_mark"
+                   android:src="@drawable/check_mark"
+                   android:visibility="invisible"
+
+        />
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/my_courses_all_core_courses"
+                  android:textColor="@color/green_custom"
+                  android:textSize="14sp"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="10dp"
+                  android:gravity="bottom"
+                  android:layout_toRightOf="@+id/my_courses_check_mark"
+                  android:visibility="invisible"
+        />
+
+    </RelativeLayout>
+
+
+
+
+
+    <ExpandableListView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_courses_expandable_list"
+            android:groupIndicator="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:divider="@color/white"
+    />
+
+</LinearLayout>
