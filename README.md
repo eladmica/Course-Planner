@@ -1,5 +1,5 @@
 # Course Planner
-### For a full project description, please visit:<br />http://eladmichaeli.com/personal-projects/course-planner.html
+### For a full project description, please visit:<br />http://eladmichaeli.com/projects/course-planner
 
 ![Course Planner Logo](logo.png?raw=true)
 
